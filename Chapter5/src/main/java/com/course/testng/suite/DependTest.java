@@ -14,6 +14,4 @@ public class DependTest {
         System.out.println("test2 run ");
     }
 
-
-
 }
