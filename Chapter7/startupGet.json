@@ -21,7 +21,9 @@
     },
 
     "response": {
-      "text": "huhansan come back"
+      "text": "huhansan come back",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
     }
   }
 ]
