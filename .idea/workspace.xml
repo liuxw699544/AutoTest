@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91d2ac5e-3b94-4cbb-afc5-701205e27ba5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter7/startupWithHeader.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter7/startupWithRedirect.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter7/startupWithHeader.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter7/startupWithHeader.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Chapter/target/" />
     <ignored path="$PROJECT_DIR$/Chapter6/target/" />
@@ -46,11 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter7/startupWithHeader.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="120">
+              <caret line="4" column="34" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="4" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter7/startupWithRedirect.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -69,15 +79,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="7" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter6/src/main/resources/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -127,6 +128,9 @@
         <entry key="$PROJECT_DIR$" value="lhx20210407" />
       </map>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -168,6 +172,8 @@
         <option value="$PROJECT_DIR$/Chapter7/startupWithCookies.json" />
         <option value="$PROJECT_DIR$/Chapter7/moco基本操作说明" />
         <option value="$PROJECT_DIR$/Chapter7/startupWithHeader.json" />
+        <option value="$PROJECT_DIR$/Chapter7/startupWithRedorect.json" />
+        <option value="$PROJECT_DIR$/Chapter7/startupWithRedirect.json" />
       </list>
     </option>
   </component>
@@ -479,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632375637516</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="moco基本操作请求，携带headers的POST请求,特别注意json传值部分">
+      <created>1632467391935</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1632467391936</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -542,7 +555,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32929516" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.39207047" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32599118" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.033039648" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.11894273" />
@@ -614,7 +627,8 @@
     <MESSAGE value="moco基本操作请求，post参数请求,注意post请求要用jmeter去访问" />
     <MESSAGE value="moco基本操作请求，携带cookies的get请求" />
     <MESSAGE value="moco基本操作请求，携带cookies的POST请求,特别注意json传值部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="moco基本操作请求，携带cookies的POST请求,特别注意json传值部分" />
+    <MESSAGE value="moco基本操作请求，携带headers的POST请求,特别注意json传值部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="moco基本操作请求，携带headers的POST请求,特别注意json传值部分" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Chapter5/src/main/java/com/course/testng/suite/SuiteConfig.java" />
@@ -881,8 +895,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter7/startupWithHeader.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="120">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter7/startupWithRedirect.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="30" />
         </state>
       </provider>
     </entry>
