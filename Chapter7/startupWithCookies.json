@@ -9,7 +9,7 @@
       "cookies":{
         "login": "true"
       },
-      "text": "获取cookies  成功",
+      "text": "获取cookies成功",
       "headers": {
         "Content-Type": "text/html;charset=gbk"
       }
