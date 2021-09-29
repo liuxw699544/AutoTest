@@ -1,14 +1,17 @@
 package com.course.httpclient.cookies;
 
 import org.apache.http.HttpResponse;
+import org.apache.http.client.CookieStore;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.cookie.Cookie;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -34,10 +37,23 @@ public class MyCookiesForGet {
 
         //测试逻辑代码编写
         HttpGet get = new HttpGet(testUrl);
-        HttpClient client = new DefaultHttpClient();
+        DefaultHttpClient client = new DefaultHttpClient();
         HttpResponse response = client.execute(get);
         result = EntityUtils.toString(response.getEntity(), "utf-8");
         System.out.println(result);
+
+        //获取cookies信息
+        CookieStore store = client.getCookieStore();
+        List<Cookie> cookiesList = store.getCookies();
+
+        for (Cookie cookie : cookiesList){
+            String name = cookie.getName();
+            String value = cookie.getValue();
+
+            System.out.println("cookies name = "+name
+                    +";cookies value ="+value);
+
+        }
 
     }
 
