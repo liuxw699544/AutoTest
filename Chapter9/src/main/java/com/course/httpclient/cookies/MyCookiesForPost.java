@@ -1,9 +1,11 @@
 package com.course.httpclient.cookies;
 
+import netscape.javascript.JSObject;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.cookie.Cookie;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
@@ -15,12 +17,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class MyCookiesForGet {
-
+public class MyCookiesForPost {
     private String url;
     private ResourceBundle bundle;
     //用来存储cookies信息的变量
-    private  CookieStore store;
+    private CookieStore store;
 
     @BeforeTest
     public void BeforceTest(){
@@ -60,25 +61,26 @@ public class MyCookiesForGet {
     }
 
     @Test(dependsOnMethods = {"testGetCookies"})
-    public void testGetWithCookies() throws IOException {
-        String uri = bundle.getString("test.get.with.cookies");
+    public  void testPostMethod(){
+        String uri = bundle.getString("test.post.with.cookies");
+        //拼接最终的测试地址
         String testUrl = this.url+uri;
-        HttpGet get = new HttpGet(testUrl);
+
+        //声明一个client对象，用于方法执行
         DefaultHttpClient client = new DefaultHttpClient();
 
-        //设置cookies信息
-        client.setCookieStore(this.store);
-        HttpResponse response = client.execute(get);
+        //声明一个方法，这个方法就是post方法
+        HttpPost post = new HttpPost();
 
-        //获取响应的状态码
-        int statusCode = response.getStatusLine().getStatusCode();
-        System.out.println("statusCode = "+statusCode);
+        //添加参数
+        JSON
+        //设置请求头信息
 
-        if (statusCode == 200){
-            String result = EntityUtils.toString(response.getEntity(), "utf-8");
-            System.out.println(result);
+        //声明对象进行相应结果的存储
 
-        }
+        //
+
+
     }
 
 }

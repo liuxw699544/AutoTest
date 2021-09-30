@@ -14,7 +14,7 @@
         "Content-Type": "text/html;charset=gbk"
       }
     }
-    },
+  },
   {
     "description": "这是携带cookies信息访问的get请求",
     "request": {
@@ -28,7 +28,7 @@
       "text": "携带cookies信息才能访问的get请求"
       }
     },
-  {"description": "这是携带cookies信息访问的post请求",
+  {"description": "这是携带cookies信息才能访问的post请求",
     "request": {
       "uri": "/post/with/cookies",
       "method": "post",
